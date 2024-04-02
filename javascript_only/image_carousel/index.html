@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
 </head>
 <body>
+
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="./images/Screen Shot 2022-10-25 at 3.07.25 PM copy.png" alt="img 1">
+            <img src="./images/Screen Shot 2023-06-04 at 1.22.55 AM copy.png" alt="img 2">
+            <img src="./images/Screen Shot 2023-09-07 at 4.10.26 PM copy.png" alt="img 3">
+            <img src="./images/Screen Shot 2023-09-29 at 2.02.57 PM copy.png" alt="img 4">
+            <img src="./images/Screen Shot 2023-10-02 at 11.43.55 PM copy.png" alt="img 5">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
     
 </body>
 </html>
