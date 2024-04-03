@@ -8,3 +8,21 @@ const btn = document.getElementById('openModalBtn');
 const closeBtn = document.getElementsByClassName('closeBtn')[0];
 
 
+// listen for open click
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+
+// listen for close click
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+
+// listen for outside click
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
