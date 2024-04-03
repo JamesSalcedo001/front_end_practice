@@ -1,23 +1,23 @@
 import "./NavBar.css"
-
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <a href="/" className="nav-logo">🌻</a>
+        <Link to="/" className="nav-logo">🌻</Link>
         <ul className="nav-menu">
           <li className="nav-item">
-            <a href="/"className="nav-links">Home</a>
+            <Link to="/"className="nav-links">NavBar</Link>
           </li>
           <li className="nav-item">
-            <a href="/about" className="nav-links">About</a>
+            <Link to="/sidebar" className="nav-links">SideBar</Link>
           </li>
           <li className="nav-item">
-            <a href="/services" className="nav-links">Services</a>
+            <Link to="/search" className="nav-links">Search</Link>
           </li>
           <li className="nav-item">
-            <a href="/contact" className="nav-links">Contact</a>
+            <Link to="/form" className="nav-links">Form</Link>
           </li>
         </ul>
       </div>
@@ -26,3 +26,8 @@ const NavBar = () => {
 }
 
 export default NavBar;
+
+
+      // <li className="nav-item">
+      //     <Link to="/" className="nav-links"></Link>
+      // </li>
