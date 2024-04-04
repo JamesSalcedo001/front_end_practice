@@ -1,3 +1,8 @@
 #home-text {
   text-align: center;
+  color: whitesmoke;
+}
+
+body {
+  background-color: rgb(34, 36, 45);
 }
