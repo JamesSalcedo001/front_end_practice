@@ -8,8 +8,6 @@ html, body, ul {
 .navbar {
     background: #333;
     height: 60px;
-    position: fixed;
-    top: 0;
     width: 100%;
     z-index: 1000;
 }
@@ -46,3 +44,4 @@ html, body, ul {
 .nav-links:hover {
     color: #04c;
 }
+

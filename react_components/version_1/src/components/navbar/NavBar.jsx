@@ -8,9 +8,6 @@ const NavBar = () => {
         <Link to="/" className="nav-logo">🌻</Link>
         <ul className="nav-menu">
           <li className="nav-item">
-            <Link to="/"className="nav-links">NavBar</Link>
-          </li>
-          <li className="nav-item">
             <Link to="/sidebar" className="nav-links">SideBar</Link>
           </li>
           <li className="nav-item">
