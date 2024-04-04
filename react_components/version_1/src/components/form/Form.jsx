@@ -1,6 +1,8 @@
+import "./Form.css"
+
 const Form = () => {
     return (
-        <div> Form Component</div>
+        <div className="form-div">Form Component</div>
     )
 }
 
