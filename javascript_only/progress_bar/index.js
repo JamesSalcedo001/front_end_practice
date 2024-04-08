@@ -1,15 +1,19 @@
+
+
 function move() {
     let elem = document.getElementById("progressBar");
-    let width = 0;
-    let id = setInterval(frame, 10);
-    
+    let currentWidth = parseInt(elem.style.width, 10) || 0;
+    const maxWidth = 100;
+    const speed = 1;
+    let id = setInterval(frame, 20)
+
     function frame() {
-        if (width >= 100) {
+        if (currentWidth >= maxWidth) {
             clearInterval(id)
         } else {
-            width++;
-            elem.style.width = width + "%"
-            elem.textContent = width * 1 + "%"
+            currentWidth += speed;
+            elem.style.width = currentWidth + "%"
+            elem.textContent = currentWidth + "%"
         }
     }
 }
