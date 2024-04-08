@@ -16,6 +16,9 @@ const NavBar = () => {
           <li className="nav-item">
             <Link to="/form" className="nav-links">Form</Link>
           </li>
+          <li className="nav-item">
+            <Link to="/grid" className="nav-links">Grid</Link>
+          </li>
         </ul>
       </div>
     </nav>
@@ -28,3 +31,4 @@ export default NavBar;
       // <li className="nav-item">
       //     <Link to="/" className="nav-links"></Link>
       // </li>
+
