@@ -1,5 +1,3 @@
-
-
 function move() {
     let elem = document.getElementById("progressBar");
     let currentWidth = parseInt(elem.style.width, 10) || 0;
