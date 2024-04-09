@@ -1,18 +1,35 @@
+body {
+    background-color: rgb(35, 34, 62);
+    margin: 30vh auto;
+    margin-inline: 0.3rem;
+    padding: 1rem;
+}
+
+#btn {
+    margin: 10rem 40rem auto;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 15px;
+}
+
+
 .progress-container {
     width: 100%;
-    background-color: #eee;
-    padding: 3px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+    background-color: #1e1a1a;
+    padding: 4px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(244, 240, 240, 0.284)
 }
 
 .progress-bar {
-    height: 20px;
-    background-color: #4CAF50;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 30px;
+    background-color: #1eda24;
     text-align: center;
-    line-height: 20px;
+    line-height: 30px;
     color: white;
     width: 0%;
     border-radius: 3px;
-    transition: width 0.09s ease-in-out;
+    transition: width 0.07s ease-in-out;
 }
