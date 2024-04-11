@@ -129,3 +129,68 @@ footer {
     border-radius: 7px;
     color: #ffffff;
 }
+
+@keyframes example {
+    from { background-color: #251d1d; border-radius: 100px 60px 20px 86px;}
+    to {background-color: #201dda; border-radius: 86px 104px 150px 55px;}
+}
+
+.animated-item {
+    width: 100px;
+    height: 100px;
+    animation-name: example;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.gradient-background {
+    background-image: linear-gradient(to right, #2d108b, #020212);
+    color: #e6d9d9;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* .transition-item {
+    background-image: linear-gradient(to right, #2d108b, #020212);
+    color: #e6d9d9;
+    padding: 20px;
+    margin: 20px 0;
+    transition: background-image 6s ease-in-out;
+}
+
+.transition-item:hover {
+    background-image: linear-gradient(to right, #c6c2d4, #2d2daa);
+    color: #110e74;
+} */
+
+
+.transition-item {
+    position: relative;
+    color: #e6d9d9;
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #2d108b, #020212);
+}
+
+.transition-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to left, #740606, #cfcfdc);
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.transition-item:hover::after {
+    opacity: 1;
+}
+
+.transition-item:hover {
+    color: #e0e0f2;
+}
