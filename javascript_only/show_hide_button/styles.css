@@ -1,0 +1,27 @@
+
+body {
+    background-color: rgb(30, 35, 71);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 36vh auto;
+}
+
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #a8abcc;
+    color: whitesmoke;
+    box-shadow: 0 2px 25px rgba(249, 246, 246, 0.429);
+    border: none;
+    border-radius: 5px;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 16px;
+}
